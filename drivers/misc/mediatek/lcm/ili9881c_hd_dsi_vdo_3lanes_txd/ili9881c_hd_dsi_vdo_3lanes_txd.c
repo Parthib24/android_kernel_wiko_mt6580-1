@@ -605,18 +605,18 @@ static unsigned int lcm_esd_recover(void)
 // zhoulidong add for eds(end)
 LCM_DRIVER ili9881c_hd_dsi_vdo_3lanes_txd_lcm_drv =
 {
-        .name            = "ili9881c_hd_dsi_vdo_3lanes_txd",
+    .name            = "ili9881c_hd_dsi_vdo_3lanes_txd",
     .set_util_funcs = lcm_set_util_funcs,
     .get_params     = lcm_get_params,
     .init           = lcm_init,
-    .suspend        = lcm_suspend,
-    .resume         = lcm_resume,
-    .compare_id     = rgk_lcm_compare_id,
+//    .suspend        = lcm_suspend,
+//    .resume         = lcm_resume,
+//    .compare_id     = rgk_lcm_compare_id,
 //    .esd_check = lcm_esd_check,
 //    .esd_recover = lcm_esd_recover,
-#if (LCM_DSI_CMD_MODE)
-    .update         = lcm_update,
-#endif
+//#if (LCM_DSI_CMD_MODE)
+//    .update         = lcm_update,
+//#endif
 };
 
 
