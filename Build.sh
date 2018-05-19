@@ -8,5 +8,6 @@ export KBUILD_BUILD_HOST=travis-gccTestServer
 
 mkdir -p out
 export ARCH=arm ARCH_MTK_PLATFORM=mt6580
+make -C $PWD O=$PWD/out ARCH=arm v3702_defconfig
 make -C $PWD O=$PWD/out ARCH=arm $DEFCONFIG
 make -j4 -C $PWD O=$PWD/out ARCH=arm
