@@ -83,14 +83,14 @@ static int panel_vendor_buff = 0;;
 #include "ftbin_YX.h"
 #include "ftbin_DWS.h"
 #elif defined(TP_UPDATE_K400)
+
+#endif
 static int panel_vendor_buff = 0;;
 #include "ftbin_k400_dj.h"
 #include "ftbin_k400_hlt.h"
 #else
 #include "ftbin_HRC.h"
 #endif // tp_update_v2800 
-#endif
-
 static int work_lock=0x00;
 #define FTS_SUPPORT_TRACK_ID
 
