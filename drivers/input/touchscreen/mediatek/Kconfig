@@ -23,6 +23,10 @@ config TOUCHSCREEN_MTK
 config MTK_TGESTURE
         bool "tGesture for Mediatek package"
         default n
+
+# guomingyi add for tp driver.
+source "drivers/input/touchscreen/mediatek/ft6436u/Kconfig"
+
 config TOUCHSCREEN_MTK_EKTF2K
         bool "ektf2k for Mediatek package"
         default n
