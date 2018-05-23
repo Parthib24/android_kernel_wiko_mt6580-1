@@ -2,7 +2,7 @@
 # v1.0
 # RX Kernel build script
 
-DEFCONFIG=p4200_defconfig
+DEFCONFIG=v3702_defconfig
 export KBUILD_BUILD_USER=Parthib-K24
 export KBUILD_BUILD_HOST=travis-gccTestServer
 
